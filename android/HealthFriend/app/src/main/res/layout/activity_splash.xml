@@ -13,7 +13,7 @@
         android:id="@+id/imageView"
         android:src="@drawable/health_friend_icon"
         android:tint="@android:color/white"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true" />
 
     <TextView
