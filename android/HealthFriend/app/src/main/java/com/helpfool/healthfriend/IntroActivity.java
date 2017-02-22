@@ -30,9 +30,9 @@ public class IntroActivity extends AppIntro {
         // addSlide(secondFragment);
         // addSlide(thirdFragment);
 
-        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "Things Are", R.drawable.health_friend_icon, getColor(R.color.colorBackground)));
-        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "Going According", R.drawable.health_friend_icon, getColor(R.color.colorBackground)));
-        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "To Plan", R.drawable.health_friend_icon, getColor(R.color.colorBackground)));
+        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "Things Are", R.drawable.health_friend_icon, getColor(R.color.colorPrimary)));
+        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "Going According", R.drawable.health_friend_icon, getColor(R.color.colorPrimary)));
+        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "To Plan", R.drawable.health_friend_icon, getColor(R.color.colorPrimary)));
 
         // OPTIONAL METHODS
         // Override bar/separator color.

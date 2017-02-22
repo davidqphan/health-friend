@@ -27,6 +27,11 @@
         </activity>
 
         <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings" >
+        </activity>
+
+        <activity
             android:name=".IntroActivity"
             android:label="Intro Screen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
