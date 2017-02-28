@@ -23,11 +23,6 @@ public class SplashScreen extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
 
-        // custom font logo
-        TextView hfLogo = (TextView)findViewById(R.id.hfLogo);
-        Typeface customFont = Typeface.createFromAsset(getAssets(), "ArimaMadurai-ExtraBold.ttf");
-        hfLogo.setTypeface(customFont, 3);
-
         //thread for splash screen running
         Thread logoTimer = new Thread() {
             public void run() {

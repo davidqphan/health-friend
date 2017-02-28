@@ -1,14 +1,20 @@
 package com.helpfool.healthfriend;
 
+import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * Created by dphan on 2/21/17.
@@ -30,9 +36,9 @@ public class IntroActivity extends AppIntro {
         // addSlide(secondFragment);
         // addSlide(thirdFragment);
 
-        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "Things Are", R.drawable.health_friend_icon, getColor(R.color.colorPrimary)));
-        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "Going According", R.drawable.health_friend_icon, getColor(R.color.colorPrimary)));
-        addSlide(AppIntroFragment.newInstance("Welcome to Health Friend", "To Plan", R.drawable.health_friend_icon, getColor(R.color.colorPrimary)));
+        addSlide(SampleSlide.newInstance(R.layout.intro_fragment_1));
+        addSlide(SampleSlide.newInstance(R.layout.intro_fragment_2));
+        addSlide(SampleSlide.newInstance(R.layout.intro_fragment_3));
 
         // OPTIONAL METHODS
         // Override bar/separator color.
@@ -42,7 +48,7 @@ public class IntroActivity extends AppIntro {
         setFadeAnimation();
 
         // Hide Skip/Done button.
-        showSkipButton(true);
+        showSkipButton(false);
         setProgressButtonEnabled(true);
 
     }
@@ -66,4 +72,5 @@ public class IntroActivity extends AppIntro {
         super.onSlideChanged(oldFragment, newFragment);
         // Do something when the slide changes.
     }
+
 }

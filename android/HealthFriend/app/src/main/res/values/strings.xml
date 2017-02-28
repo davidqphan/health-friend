@@ -3,4 +3,8 @@
     <string name="get_started">Get Started</string>
     <string name="settings">Settings</string>
     <string name="save">Save</string>
+    <string name="welcome">Welcome, I am your new friend!</string>
+    <string name="journey">I am here to guide you on this new journey.</string>
+    <string name="geolocation">I keep track of all the bad places you do not want to visit.</string>
+    <string name="slogan">Take control of your eating habits, one friendly reminder at a time.</string>
 </resources>

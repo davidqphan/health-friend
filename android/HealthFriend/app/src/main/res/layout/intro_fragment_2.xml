@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
 
+    tools:ignore="MissingPrefix"
     android:id="@+id/splashScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -34,14 +36,27 @@
                 android:layout_height="0dp"
                 android:layout_weight="0.70">
 
+
                 <com.helpfool.healthfriend.ArimaMaduraiTextView
+                    android:id="@+id/hfLogo"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:text="@string/app_name"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
-                    android:textSize="48sp" />
+                    android:textSize="48sp"
+                    android:paddingBottom="50dp"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize = "20sp"
+                    android:layout_below="@+id/hfLogo"
+                    android:text="@string/geolocation"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@android:color/white" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -57,17 +72,6 @@
                         android:layout_width="0dp"
                         android:layout_height="fill_parent"
                         android:layout_weight="0.84">
-                        <Button
-                            android:id="@+id/getStarted"
-                            android:layout_width="fill_parent"
-                            android:layout_height="80dp"
-                            android:layout_alignParentBottom="true"
-                            android:width="85sp"
-                            android:background="@drawable/big_button"
-                            android:padding="10dp"
-                            android:text="@string/get_started"
-                            android:textColor="@drawable/button_text"
-                            android:textSize="24sp"/>
                     </RelativeLayout>
                     <RelativeLayout
                         android:layout_width="0dp"
