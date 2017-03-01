@@ -1,9 +1,11 @@
 package com.helpfool.healthfriend;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.Window;
@@ -63,6 +65,20 @@ public class IntroActivity extends AppIntro {
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
+
+        // NOTE: work around, might be a better way of doing this
+        SharedPreferences getPrefs =
+                PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
+        // make a new preferences editor
+        SharedPreferences.Editor e = getPrefs.edit();
+
+        // edit preference to make it false because we don't want this to run
+        e.putBoolean("firstStart", false);
+
+        // apply changes
+        e.apply();
+
         finish();
         // Do something when users tap on Done button.
     }
