@@ -35,4 +35,5 @@ repositories {
 dependencies {
     compile 'com.github.paolorotolo:appintro:4.1.0'
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
 }

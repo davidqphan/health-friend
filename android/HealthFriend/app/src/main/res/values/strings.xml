@@ -7,4 +7,8 @@
     <string name="journey">I am here to guide you on this new journey.</string>
     <string name="geolocation">I keep track of all the bad places you do not want to visit.</string>
     <string name="slogan">Take control of your eating habits, one friendly reminder at a time.</string>
+    <string name="today_score">Today\'s Score</string>
+    <string name="weekly_score">Weekly Score:</string>
+    <string name="motivate_great">Great Work!</string>
+    <string name="score_demo">89</string>
 </resources>
